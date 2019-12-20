@@ -78,10 +78,10 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.13.0)
     nio4r (2.5.2)
-    nokogiri (1.10.4)
+    nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     pg (1.1.4)
-    puma (3.12.1)
+    puma (3.12.2)
     rack (2.0.8)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -133,9 +133,9 @@ PLATFORMS
 
 DEPENDENCIES
   ffi (= 1.11.1)
-  nokogiri (= 1.10.4)
+  nokogiri (= 1.10.7)
   pg (= 1.1.4)
-  puma (= 3.12.1)
+  puma (= 3.12.2)
   rails (= 6.0.0)
 
 BUNDLED WITH
