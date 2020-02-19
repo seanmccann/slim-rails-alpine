@@ -2,8 +2,10 @@
 
 source "https://rubygems.org"
 
-gem 'ffi', '1.11.1'
-gem 'nokogiri', '1.10.7'
-gem 'pg', '1.1.4'
-gem 'puma', '3.12.2'
-gem 'rails', '6.0.0'
+gem 'ffi', '1.12.2'
+gem 'nokogiri', '1.10.8'
+gem 'pg', '1.2.2'
+gem 'puma', '4.3.1'
+gem 'rails', '6.0.2.1'
+gem 'sassc', '2.2.1'
+

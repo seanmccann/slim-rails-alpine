@@ -1,8 +1,13 @@
-FROM ruby:2.6.3-alpine3.9
+FROM ruby:2.6-alpine
 
-RUN apk add --update ruby-dev build-base pcre-dev postgresql-dev ruby-nokogiri tzdata yarn && rm -rf /var/cache/apk/*
-RUN gem install bundler -v 1.17.3
+RUN apk update && \
+    apk upgrade && \
+    apk add --update bash nodejs-current ruby-dev build-base pcre-dev postgresql-dev ruby-nokogiri tzdata yarn 
 
 ADD Gemfile* ./
+ADD package.json ./
+# ADD yarn.lock ./
 
-RUN bundle
+RUN yarn install
+
+RUN bundle install
